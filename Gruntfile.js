@@ -4,10 +4,26 @@ module.exports = function (grunt) {
   'use strict';
 
   grunt.initConfig({
+    connect: {
+      server: {
+        options: {
+          port: 9001,
+          base: './',
+          livereload: 4444,
+          open: true
+        }
+      }
+    },
+    availabletasks: {
+        tasks: {}
+    },
     watch: {
       // If any .less file changes in directory "build/less/" run the "less"-task.
-      files: ["build/less/*.less", "build/less/skins/*.less", "dist/js/app.js"],
-      tasks: ["less", "uglify"]
+      files: ["build/less/*.less", "build/less/skins/*.less", "dist/js/app.js", "*.html"],
+      tasks: ["less", "uglify"],
+      options: {
+        livereload: 4444
+      }
     },
     // "less"-task configuration
     // This task will compile all less files upon saving to create both AdminLTE.css and AdminLTE.min.css
@@ -167,6 +183,14 @@ module.exports = function (grunt) {
   // Linting task
   grunt.registerTask('lint', ['jshint', 'csslint', 'bootlint']);
 
+  //Server task
+  grunt.loadNpmTasks('grunt-contrib-connect');
+
+  //Available tasks
+  grunt.loadNpmTasks('grunt-available-tasks');
+
+
   // The default task (running "grunt" in console) is "watch"
-  grunt.registerTask('default', ['watch']);
+  grunt.registerTask('default', ['availabletasks']);
+  grunt.registerTask('start', ['connect:server', 'watch']);
 };
