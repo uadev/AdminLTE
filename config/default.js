@@ -18,7 +18,7 @@ module.exports = {
     },
     watch: {
       // If any .less file changes in directory "build/less/" run the "less"-task.
-      files: ["build/less/*.less", "build/less/skins/*.less", "dist/js/app.js", "*.html"],
+      files: ["build/less/*.less", "build/less/skins/*.less", "dist/js/app.js"],
       tasks: ["less", "uglify"],
       options: {
         livereload: 4444
