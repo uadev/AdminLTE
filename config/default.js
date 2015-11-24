@@ -25,7 +25,7 @@ module.exports = {
       }
     },
     // "less"-task configuration
-    // This task will compile all less files upon saving to create both AdminLTE.css and AdminLTE.min.css
+    // This task will compile all less files upon saving to create both layout.css and layout.min.css
     less: {
       // Development not compressed
       development: {
@@ -35,7 +35,7 @@ module.exports = {
         },
         files: {
           // compilation.css  :  source.less
-          "dist/css/AdminLTE.css": "build/less/AdminLTE.less",
+          "dist/css/layout.css": "build/less/layout.less",
           //Non minified skin files
           "dist/css/skins/skin-blue.css": "build/less/skins/skin-blue.less",
           "dist/css/skins/skin-black.css": "build/less/skins/skin-black.less",
@@ -60,7 +60,7 @@ module.exports = {
         },
         files: {
           // compilation.css  :  source.less
-          "dist/css/AdminLTE.min.css": "build/less/AdminLTE.less",
+          "dist/css/layout.min.css": "build/less/layout.less",
           // Skins minified
           "dist/css/skins/skin-blue.min.css": "build/less/skins/skin-blue.less",
           "dist/css/skins/skin-black.min.css": "build/less/skins/skin-black.less",
@@ -138,7 +138,7 @@ module.exports = {
         csslintrc: 'build/less/.csslintrc'
       },
       dist: [
-        'dist/css/AdminLTE.css',
+        'dist/css/layout.css',
       ]
     },
 
