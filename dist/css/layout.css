@@ -4932,6 +4932,8 @@ table.text-center th {
 }
 .user-menu {
   width: 230px;
+  height: 50px;
+  position: absolute;
 }
 .user-menu .image {
   max-width: 35px;
