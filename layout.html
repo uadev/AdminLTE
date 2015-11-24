@@ -17,7 +17,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="dist/css/layout.min.css">
   <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
         page. However, you can choose any other skin. Make sure you
         apply the skin class to the body tag so the changes take effect.
@@ -56,15 +56,23 @@ desired effect
 
   <!-- Main Header -->
   <header class="main-header">
-
-    <!-- Logo -->
-    <a href="index2.html" class="logo">
-      <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>A</b>LT</span>
-      <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Admin</b>LTE</span>
-    </a>
-
+    <!--User avatar -->
+      <div class="user-panel box-border user-menu">
+        <div class="pull-left image">
+          <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+          <p>Max Girling</p>
+        </div>
+        <!-- Dropdown menu -->
+        <div class="btn-group user-dropdown pull-right">
+          <i class="fa fa-chevron-down dropdown-toggle" data-toggle="dropdown" aria-expanded="false"></i>
+          <ul class="dropdown-menu">
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </div>
+      </div>
     <!-- Header Navbar -->
     <nav class="navbar navbar-static-top" role="navigation">
       <!-- Sidebar toggle button-->
@@ -229,71 +237,38 @@ desired effect
     <section class="sidebar">
 
       <!-- Sidebar user panel (optional) -->
-      <div class="user-panel">
-        <div class="pull-left image">
-          <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
-        </div>
-        <div class="pull-left info">
-          <p>Alexander Pierce</p>
-          <!-- Status -->
-          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
-        </div>
-      </div>
-
-      <!-- search form (Optional) -->
-      <form action="#" method="get" class="sidebar-form">
-        <div class="input-group">
-          <input type="text" name="q" class="form-control" placeholder="Search...">
-              <span class="input-group-btn">
-                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
-                </button>
-              </span>
-        </div>
-      </form>
-      <!-- /.search form -->
 
       <!-- Sidebar Menu -->
       <ul class="sidebar-menu">
         <!-- Optionally, you can add icons to the links -->
+        <li>
+          <a href="#"><i class="fa fa-th-large"></i> <span>Dashboard</span></a>
+        </li>
         <li class="active">
-          <a href="#"><i class="fa fa-link"></i> <span>Failures</span></a>
+          <a href="#"><i class="fa fa-chain-broken"></i> <span>Failures</span></a>
         </li>
         <li>
-          <a href="#"><i class="fa fa-link"></i> <span>Servicing</span></a>
+          <a href="#"><i class="fa fa-check-square-o"></i> <span>Servicing</span></a>
         </li>
         <li>
-          <a href="#"><i class="fa fa-link"></i> <span>Warranty</span></a>
+          <a href="#"><i class="fa fa-certificate"></i> <span>Warranty</span></a>
         </li>
         <li>
-          <a href="#"><i class="fa fa-link"></i> <span>Vehicle Performance</span></a>
+          <a href="#"><i class="fa fa-area-chart"></i> <span>Performance</span></a>
         </li>
         <li>
-          <a href="#"><i class="fa fa-link"></i> <span>Trainings</span></a>
+          <a href="#"><i class="fa fa-mortar-board"></i> <span>Training</span></a>
         </li>
         <li>
-          <a href="#"><i class="fa fa-link"></i> <span>Administration</span></a>
-        </li>
-        <li>
-          <div>
-              <button class="btn btn-flat btn-primary">Add user</button>
-              <button class="btn btn-flat btn-primary">Add vehicle</button>
-          </div>
+          <a href="#"><i class="fa fa-gears"></i> <span>Administration</span></a>
         </li>
       </ul>
-      <div class=box-footer>
-        <button class="btn btn-flat btn-primary btn-block">Add user</button>
-        <button class="btn btn-flat btn-primary btn-block">Add vehicle</button>
-      </div>
-      <div class="box-footer">
-        <div class="pull-right">
-          <button type="button" class="btn btn-default"><i class="fa fa-pencil"></i> Draft</button>
-          <button type="submit" class="btn btn-primary"><i class="fa fa-envelope-o"></i> Send</button>
-        </div>
-        <button type="reset" class="btn btn-default"><i class="fa fa-times"></i> Discard</button>
-      </div>
       <!-- /.sidebar-menu -->
     </section>
     <!-- /.sidebar -->
+    <div class="bottom">
+      <div class="logo-footer"></div>
+    </div>
   </aside>
 
   <!-- Content Wrapper. Contains page content -->
