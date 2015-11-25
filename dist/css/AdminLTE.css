@@ -462,7 +462,6 @@ a:focus {
 }
 .sidebar {
   padding-bottom: 10px;
-  text-transform: capitalize;
 }
 .sidebar-form input:focus {
   border-color: transparent;
