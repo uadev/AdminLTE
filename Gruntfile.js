@@ -1,4 +1,4 @@
-// AdminLTE Gruntfile
+// Radius Gruntfile
 module.exports = function (grunt) {
 
   'use strict';

@@ -1,4 +1,5 @@
 'use strict';
+var connectSSI = require('connect-ssi');
 
 module.exports = {
   grunt: {
@@ -9,7 +10,21 @@ module.exports = {
           base: './',
           livereload: 4444,
           debug: true,
-          open: true
+          open: true,
+          middleware: function(connect, options, middlewares) {
+            console.log('ssssf')
+            if (!Array.isArray(options.base)) {
+              options.base = [options.base];
+            }
+            var directory = options.directory || options.base[options.base.length - 1];
+            console.log(directory)
+
+            middlewares.unshift(connectSSI({
+              baseDir: directory,
+              ext: '.html'
+            }));
+            return middlewares;
+          }
         }
       }
     },
