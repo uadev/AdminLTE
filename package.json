@@ -3,7 +3,7 @@
   "version": "2.3.2",
   "repository": {
     "type": "git",
-    "url": "git://github.com/uadev/AdminLTE.git"
+    "url": "git://github.com/uadev/radius-dashboard/"
   },
   "license": "MIT",
   "devDependencies": {
