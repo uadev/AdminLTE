@@ -8,35 +8,6 @@ Introduction
 
 **AdminLTE** has been carefully coded with clear comments in all of its JS, LESS and HTML files. LESS has been used to increase code customizability.
 
-Installation
-------------
-There are multiple ways to install AdminLTE.
-
-####Download:
-
-Download from Github or [visit Almsaeed Studio](https://almsaeedstudio.com) and download the latest release.
-
-####Using The Command Line:
-
-**Github**
-
-- Fork the repository ([here is the guide](https://help.github.com/articles/fork-a-repo/)).
-- Clone to your machine
-```
-git clone https://github.com/YOUR_USERNAME/AdminLTE.git
-```
-
-**Bower**
-
-```
-bower install admin-lte
-```
-
-**Composer**
-
-```
-composer require "almasaeed2010/adminlte=~2.0"
-```
 
 Documentation
 -------------
