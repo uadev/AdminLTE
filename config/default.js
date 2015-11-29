@@ -12,7 +12,6 @@ module.exports = {
           debug: true,
           open: true,
           middleware: function(connect, options, middlewares) {
-            console.log('ssssf')
             if (!Array.isArray(options.base)) {
               options.base = [options.base];
             }
