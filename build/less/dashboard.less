@@ -23,6 +23,12 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
 .sidebar-collapse .logo-footer {
   width: 45px;
 }
@@ -66,9 +72,6 @@
 }
 .user-menu .image {
   max-width: 35px;
-}
-.user-panel {
-  overflow: hidden;
 }
 
 .user-dropdown .dropdown-menu {
@@ -136,6 +139,8 @@
   height: auto;
   min-height: 100% !important;
   color: @color-text;
+  min-width: 812px;
+  overflow: auto;
 }
 
 .layout-dashboard .col {
