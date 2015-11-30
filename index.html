@@ -27,6 +27,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
   -->
   <link rel="stylesheet" href="dist/css/skins/skin-blue.min.css">
 
+  <!-- iCheck for checkboxes and radio inputs -->
+  <link rel="stylesheet" href="../plugins/iCheck/all.css">
+
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -98,6 +101,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>
 <!-- Bootstrap 3.3.5 -->
 <script src="bootstrap/js/bootstrap.min.js"></script>
+<!-- iCheck 1.0.1 -->
+<script src="../../plugins/iCheck/icheck.min.js"></script>
+<script>
+  //Red color scheme for iCheck
+  $('input[type="checkbox"].minimal-red').iCheck({
+    checkboxClass: 'icheckbox_minimal-blue'
+  });
+</script>
 <!-- AdminLTE App -->
 <script src="dist/js/app.min.js"></script>
 <!--
