@@ -4945,6 +4945,12 @@ table.text-center th {
 .top-menu.b-add-vehicle {
   margin-right: 20px;
 }
+.top-menu-nav-item.vehicle i,
+.top-menu-nav-item.custom-filters i {
+  margin-left: 10px;
+  color: #3788cb;
+  font-size: 16px;
+}
 .top-menu-nav-item {
   width: 100%;
   text-align: center;
