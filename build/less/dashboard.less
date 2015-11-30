@@ -7,6 +7,21 @@
 @color-text-active: #3788CB;
 @font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
+.menu-font {
+  color: @color-text;
+  font-family: @font-family;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.top-menu {
+  font-size: 16px;
+  line-height: @tl-width;
+  width: 100%;
+  text-align: center;
+  color: @color-text-active;
+  text-transform: uppercase;
+}
 
 .bottom {
   position: absolute;
@@ -18,7 +33,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 180px;
-  height: 32px;
+  height: 35px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -34,12 +49,8 @@
 }
 
 .sidebar-menu {
-  color: @color-text;
-  font-family: @font-family;
-  font-size: 14px;
-  font-weight: 400;
-  text-transform: uppercase;
   width: @sidebar-width;
+  .menu-font;
 }
 
 .sidebar-menu .active{
@@ -149,8 +160,18 @@
   margin: 0;
 }
 
-.layout-block-1 {
+.border-right {
   border-right: 1px solid gray;
+}
+
+.layout-block-2,
+.layout-block-3,
+.layout-block-4 {
+  .border-right;
+}
+
+.layout-block-1 {
+  .border-right;
   height: @tl-width;
   width: @sidebar-width;
 }
